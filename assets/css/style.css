@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+
+    height: 100vh;
+
+    font-size: 16px;
+
+    padding: 99px 120px;
+    padding-bottom: 0;
+
+}
+
+header{
+    position: fixed;
+    background: black;
+
+    width: 83%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid #8B5CF6;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 125%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+input{
+    appearance: none; /* Tira a aparencia, o sinal de check */
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    background: #18181B;
+}
+
+input:checked{
+    background: #8B5CF6;
+
+    border: 2px solid #a78bfa;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 132px;
+    padding-bottom: 99px;
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.habit{
+    width: 64px;
+    height: 64px;
+
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .days{
+    display: flex;
+    gap: 48px;
+    margin-left: 32px;
+}
+
+form .day{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div{
+    margin-bottom: 8px;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    line-height: 125%;
+
+    color: #A1A1AA;
+    text-align: center;
+}
+
+@media (max-width: 321px){
+    body{
+        padding: 60px 25px !important;
+    }
+
+    header{
+        width: 84% !important;
+    }
+
+    button div{
+        display: none;
+    }
+}
+
+@media (max-width: 570px){
+    body{
+        padding-left: 65px;
+    }
+
+    header{
+        width:70%;
+    }
+
+    button div{
+        display: none;
+    }
+}
